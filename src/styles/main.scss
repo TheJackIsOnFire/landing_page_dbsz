@@ -1,0 +1,53 @@
+@use 'hero';
+@use 'counter';
+@use 'variables';
+
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    color: #fff;
+}
+
+.background__container, body {
+    background-color: variables.$colorBase;
+}
+
+.container {
+    width: 100%;
+    padding: 0 10vw;
+}
+
+//fonts
+
+@mixin title($fontSinze: 32px) {
+    font-size: $fontSinze;
+}
+
+.title {
+    @include title;
+    font-weight: normal;
+}
+
+
+.title--big {
+    @include title(42px);
+    font-weight: bold;
+}
+
+.title--sub {
+    @include title(24px);
+    font-weight: bold;
+}
+
+@mixin text($fontSinze: 16px) {
+    font-size: $fontSinze;
+}
+
+.text {
+    @include text;
+}

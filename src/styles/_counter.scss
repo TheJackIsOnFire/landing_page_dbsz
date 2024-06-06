@@ -1,0 +1,109 @@
+@use 'variables';
+
+.counter {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+    background: linear-gradient(180deg, transparent, variables.$colorPrimary,  variables.$colorBase, variables.$colorBase,);
+
+    &__img {
+        margin: 0 auto;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        top: -13vh;
+        position: relative;
+        width: 500px;
+        height: auto;
+    }
+
+    @media (min-width: 1024px) {
+        &__img {
+            width: 600px;
+            height: auto;
+            top: -17vh;
+        }
+    }
+
+    @media (max-width: 540px) {
+        &__img {
+            top: -12vh;
+            width: 330px;
+            height: auto;
+        }
+    }
+
+    &__date {   
+        margin-top: -130px;
+
+        &__title {
+            text-align: center;
+            margin-bottom: 30px;
+
+            &__h1 {
+                margin-bottom: 10px;
+                font-size: 42px;
+            }
+
+            @media (max-width: 640px) {
+                &__h1{
+                    font-size: 32px;
+                    font-weight: normal;
+                }
+            }
+            
+
+            &__span {
+                color: variables.$colorTextSecundary;
+            }
+
+            &__h2 {
+                margin-top: 30px;
+                margin-bottom: 40px;
+            }
+        }
+
+        &__event {
+            display: flex;
+            justify-content: space-around;
+
+            &__infos {
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+
+                &__time {
+                    font-size: 48px;
+                    color: variables.$colorHightlited;
+                    
+                }
+            }
+        }
+    }
+
+    //largura
+    @media (min-width: 1024px) {
+        &__date {
+            margin-top: -180px;
+        }
+    }
+
+    @media (max-width: 540px) {
+        &__date {
+            margin-top: -100px;
+        }
+    }
+
+    //altura
+    @media (max-height: 768px) {
+        &__date {
+            margin-top: -100px;
+        }
+    }
+
+    @media (max-height: 540px) {
+        &__date {
+            margin-top: -75px;
+        }
+    }
+}

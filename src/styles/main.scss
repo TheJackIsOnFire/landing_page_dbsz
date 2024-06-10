@@ -1,6 +1,7 @@
 @use 'hero';
 @use 'counter';
 @use 'variables';
+@use 'infos';
 
 * {
     padding: 0;
@@ -20,34 +21,4 @@
 .container {
     width: 100%;
     padding: 0 10vw;
-}
-
-//fonts
-
-@mixin title($fontSinze: 32px) {
-    font-size: $fontSinze;
-}
-
-.title {
-    @include title;
-    font-weight: normal;
-}
-
-
-.title--big {
-    @include title(42px);
-    font-weight: bold;
-}
-
-.title--sub {
-    @include title(24px);
-    font-weight: bold;
-}
-
-@mixin text($fontSinze: 16px) {
-    font-size: $fontSinze;
-}
-
-.text {
-    @include text;
 }

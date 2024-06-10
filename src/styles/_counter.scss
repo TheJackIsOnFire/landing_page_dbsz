@@ -3,8 +3,8 @@
 .counter {
     display: flex;
     flex-direction: column;
-    margin-bottom: 50px;
-    background: linear-gradient(180deg, transparent, variables.$colorPrimary,  variables.$colorBase, variables.$colorBase,);
+    margin-bottom: 40px;
+    //background: linear-gradient(180deg, transparent, variables.$colorPrimary,  variables.$colorBase, variables.$colorBase,);
 
     &__img {
         margin: 0 auto;
@@ -21,7 +21,7 @@
         &__img {
             width: 600px;
             height: auto;
-            top: -17vh;
+            top:-17vh;
         }
     }
 
@@ -30,6 +30,12 @@
             top: -12vh;
             width: 330px;
             height: auto;
+        }
+    }
+
+    @media (max-width: 400) {
+        &__img {
+            width: 300px;
         }
     }
 
@@ -51,7 +57,6 @@
                     font-weight: normal;
                 }
             }
-            
 
             &__span {
                 color: variables.$colorTextSecundary;
@@ -101,7 +106,7 @@
         }
     }
 
-    @media (max-height: 540px) {
+    @media (max-height: 640px) {
         &__date {
             margin-top: -75px;
         }

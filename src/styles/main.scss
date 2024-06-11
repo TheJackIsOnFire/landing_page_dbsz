@@ -22,3 +22,10 @@
     width: 100%;
     padding: 0 10vw;
 }
+
+@media (max-width: 440px) {
+    .container {
+        padding: 0 4vw;
+    }
+}
+

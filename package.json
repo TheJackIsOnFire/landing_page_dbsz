@@ -1,7 +1,6 @@
 {
   "name": "landing_page_dbsz",
   "version": "1.0.0",
-  "description": "",
   "scripts": {
     "start": "parcel src/index.html src/styles/main.scss src/scripts/main.js",
     "build": "parcel build src/index.html",
